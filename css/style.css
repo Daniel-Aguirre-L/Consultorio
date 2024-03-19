@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Coolv";
+  src: url("../fonts/coolvetica rg.ttf") format("truetype");
+}
+body {
+  font-family: "Nexa", sans-serif;
+}
+
+header {
+  background-color: #E5EAED;
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+}
+
+.carousel-item {
+  height: 400px;
+  background-color: #98AD9E;
+}
+
+main {
+  background-color: #E5EAED;
+}
+
+h1 {
+  font-family: "Coolv";
+}
+
+.pic1 {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.pic2 {
+  width: 50%;
+}
+
+.icono1 {
+  width: 20%;
+}
+
+.icono2 {
+  width: 20%;
+}/*# sourceMappingURL=style.css.map */
