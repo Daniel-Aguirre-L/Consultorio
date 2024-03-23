@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Nexa";
   src: url("../fonts/Nexa-ExtraLight.ttf") format("truetype");
@@ -42,10 +43,86 @@ h1 {
   width: 50%;
 }
 
-.icono1 {
-  width: 20%;
+.card {
+  position: relative;
+  background-color: #98AD9E;
+  color: #E5EAED;
+}
+.card div {
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.card .front {
+  transform: perspective(500px) rotateY(0deg);
+}
+.card .back {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .front {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .back {
+  transform: perspective(500px) rotateY(360deg);
 }
 
-.icono2 {
-  width: 20%;
+.first-card {
+  background-image: url(/img/psicoterapia.avif);
+  background-size: contain;
+}
+.first-card li {
+  margin-top: 25px;
+}
+
+.first-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad al 50% */
+}
+
+.second-card {
+  background-image: url(/img/neuropsicologia.jpg);
+  background-size: contain;
+}
+.second-card li {
+  margin-top: 25px;
+}
+
+.second-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad al 50% */
+}
+
+.third-card {
+  background-image: url(/img/grupos\ y\ empresas.png);
+  background-size: contain;
+}
+.third-card li {
+  margin-top: 25px;
+}
+
+.third-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.1); /* Color negro con opacidad al 50% */
+}
+
+.custom-list li::marker {
+  content: "√";
+  color: green;
 }/*# sourceMappingURL=style.css.map */

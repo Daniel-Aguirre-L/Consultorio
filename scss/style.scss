@@ -1,31 +1,39 @@
-$primary:#98AD9E;
-$primaryb:#C9DED0;
-$secondary:#B57575;
-$secondaryb:#DCA39B;
+// Variables
+$primary: #98AD9E;
+$primaryb: #C9DED0;
+$secondary: #B57575;
+$secondaryb: #DCA39B;
 $background: #E5EAED;
 
+// Fuentes
 @font-face {
     font-family: 'Nexa';
     src: url('../fonts/Nexa-ExtraLight.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Coolv';
     src: url('../fonts/coolvetica\ rg.ttf') format('truetype');
 }
 
+// Estilos generales
+
 body {
     font-family: 'Nexa', sans-serif;
-    
-  }
+}
+
+// Estilos del header
 
 header {
     background-color: $background;
 }
 
-.logo{
+.logo {
     width: 30%;
     height: 30%;
 } 
+
+// Estilos del carrusel
 
 .carousel-item {
     height: 400px; 
@@ -36,7 +44,6 @@ main {
     background-color: $background;
 }
 
-
 h1 {
     font-family: "Coolv";
 }
@@ -46,14 +53,99 @@ h1 {
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
 }
+
 .pic2 {
     width: 50%;
 }
 
-.icono1{
-    width: 20%;
+// Estilos de las tarjetas
+
+.card {
+    position: relative;
+    background-color: $primary;
+    color: #E5EAED;
+  
+    div {
+      backface-visibility: hidden;
+      transition: 1s;
+    }
+  
+    .front {
+      transform: perspective(500px) rotateY(0deg);
+    }
+  
+    .back {
+      transform: perspective(500px) rotateY(180deg);
+    }
+  
+    &:hover {
+      .front {
+        transform: perspective(500px) rotateY(180deg);
+      }
+  
+      .back {
+        transform: perspective(500px) rotateY(360deg);
+      }
+    }
+  }
+
+.first-card {
+  background-image: url(/img/psicoterapia.avif);
+  background-size: contain;
+    li{
+      margin-top: 25px;
+    }
+}
+.first-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad al 50% */
 }
 
-.icono2{
-    width: 20%;
+.second-card {
+  background-image: url(/img/neuropsicologia.jpg);
+  background-size: contain;
+    li{
+      margin-top: 25px;
+    }
+}
+.second-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad al 50% */
+}
+
+.third-card {
+  background-image: url(/img/grupos\ y\ empresas.png);
+  background-size: contain;
+    li{
+      margin-top: 25px;
+    }
+}
+.third-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  background-color: rgba(0, 0, 0, 0.1); /* Color negro con opacidad al 50% */
+}
+
+// Estilos de la lista personalizada
+
+.custom-list li::marker {
+    content: "√";
+    color: green;
 }

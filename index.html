@@ -10,6 +10,8 @@
 </head>
 
 <body>
+  <!-- Header de la pagina  -->
+
   <header class="d-flex flex-wrap justify-content-between py-3 px-4 border-bottom">
     <img src="img/LOGO PSICORIENTE-HORIZONTAL.png" alt="logo" class="logo" />
 
@@ -25,7 +27,12 @@
     </ul>
   </header>
 
+  <!-- Cuerpo de la pagina -->
+
   <main>
+    <!-- Primera seccion carrusel  -->
+
+    <!-- Comportamiento del carrusel -->
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -33,6 +40,9 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+
+      <!-- Primera presentacion carrusel -->
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +63,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Segunda presentacion carrusel-->
+
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
@@ -62,6 +75,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Tercera presentacion carrusel  -->
+
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
@@ -79,6 +95,9 @@
           </div>
         </div>
       </div>
+
+      <!-- Comportamiento de los botones del carrusel  -->
+
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -89,63 +108,77 @@
       </button>
     </div>
 
-    <div class="container px-4 py-5" id="featured-3">
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center  bg-gradient fs-2 mb-3">
-            <img src="img/terapia-individual.png" alt="icono terapia" class="icono1"> 
+    <!-- Seguna seccion tarjetas -->
+
+    <div class="container py-5 " id="featured-3">
+      <div class="row g-4 py-5 row-cols-1 justify-content-center row-cols-lg-3">
+        <!-- primera tarjeta -->
+        <div class="first-card card mx-3">
+          <div class="front">
+            <h3 class="fs-2">Atencion psicologica</h3>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Terapia individual</h3>
-          <p>
-            La terapia individual implica sesiones uno a uno entre el terapeuta y el paciente, centrándose en los desafíos y problemas personales del individuo. Mediante aquella terapia individual podremos trabajar y superar dificultades como: Estrés, Ansiedad, Dificultad social, confianza etc..
-          </p>
-          <a href="#" class="icon-link">
-            Apender mas 
-            <svg class="bi">
-              <use xlink:href="#chevron-right" />
-            </svg>
-          </a>
-        </div>
-        <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center bg-gradient fs-2 mb-3">
-            <img src="img/terapia-pareja.png" alt="icono terapia pareja" class="icono2">
+          <div class="back">
+            <ul>
+              <li>Psicoteparia individual</li>
+              <li>Psicoteparia de pareja</li>
+              <li>Psicoterapia virtual</li>
+              <li>Psicoterapia para niños y adolescentes</li>
+            </ul>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Terapia de pareja</h3>
-          <p>
-            La terapia de pareja ofrece herramientas, apoyo y orientación profesional para abordar los desafíos y mejorar la calidad de la relación. Ayuda a cultivar una comunicación más saludable, a identificar y cambiar patrones dañinos, y a fortalecer la conexión emocional y la intimidad entre las parejas.
-          </p>
-          <a href="#" class="icon-link">
-            Aprender mas
-            <svg class="bi">
-              <use xlink:href="#chevron-right" />
-            </svg>
-          </a>
         </div>
-        <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em">
-              <use xlink:href="#toggles2" />
-            </svg>
+
+        <!-- Segudna tarjeta -->
+
+        <div class="second-card card mx-3">
+          <div class="front">
+            <h3 class="fs-2">Atencion neuropsicologica </h3>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>
-            Paragraph of text beneath the heading to explain the heading.
-            We'll add onto it with another sentence and probably just keep
-            going until we run out of words.
-          </p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi">
-              <use xlink:href="#chevron-right" />
-            </svg>
-          </a>
+          <div class="back">
+            <p>Aqui va contenido</p>
+          </div>
         </div>
+
+
+        <!-- tercera tarjeta -->
+
+        <div class="third-card card mx-3">
+          <div class="front">
+            <h3 class="fs-2 text-dark ">Grupos y empresas</h3>
+          </div>
+          <div class="back">
+            <p class="text-dark">Aqui va contenido</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <!-- Tercera seccion listado -->
+    <div class="d-flex">
+      <div class="col flex-grow-1">
+        <div class="text-center">
+          <p class="display-5">
+            ¿Por qué iniciar tu proceso con Psicoriente?
+          </p>
+        </div>
+      </div>
+      <div class="col flex-grow-1">
+        <div>
+          <ul class="mx-auto custom-list" style="max-width: 400px">
+            <li style="margin-bottom: 30px">Mejora tu salud mental</li>
+            <li style="margin-bottom: 30px">
+              Mayor autoconocimiento y crecimiento personal
+            </li>
+            <li style="margin-bottom: 30px">
+              Mejora tus relaciones interpersonales
+            </li>
+            <li style="margin-bottom: 30px">
+              Desarrolla habilidades de afrontamiento
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
 
   <script src="js/bootstrap.min.js"></script>
