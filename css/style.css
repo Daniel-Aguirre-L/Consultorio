@@ -47,25 +47,25 @@ h1 {
   width: 50%;
 }
 
-.card {
+.cards .card {
   position: relative;
   background-color: #98AD9E;
   color: #E5EAED;
 }
-.card div {
+.cards .card div {
   backface-visibility: hidden;
   transition: 1s;
 }
-.card .front {
+.cards .card .front {
   transform: perspective(500px) rotateY(0deg);
 }
-.card .back {
+.cards .card .back {
   transform: perspective(500px) rotateY(180deg);
 }
-.card:hover .front {
+.cards .card:hover .front {
   transform: perspective(500px) rotateY(180deg);
 }
-.card:hover .back {
+.cards .card:hover .back {
   transform: perspective(500px) rotateY(360deg);
 }
 
@@ -129,4 +129,15 @@ h1 {
 .custom-list li::marker {
   content: "√";
   color: green;
+}
+
+.card-body {
+  background-color: #E5EAED;
+}
+
+.comments .card {
+  background-color: black;
+}
+.comments .card .card-body {
+  background-color: #DCA39B;
 }/*# sourceMappingURL=style.css.map */

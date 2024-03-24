@@ -64,7 +64,7 @@ h1 {
 
 // Estilos de las tarjetas
 
-.card {
+.cards .card {
     position: relative;
     background-color: $primary;
     color: #E5EAED;
@@ -152,4 +152,16 @@ h1 {
 .custom-list li::marker {
     content: "√";
     color: green;
+}
+
+// Estilos carrusel comentarios
+.card-body {
+  background-color: #E5EAED;
+}
+
+.comments .card {
+  background-color: black;
+  .card-body {
+    background-color: #DCA39B;
+  }
 }
