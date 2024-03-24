@@ -20,6 +20,10 @@ header {
   height: 30%;
 }
 
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
 .carousel-item {
   height: 400px;
   background-color: #98AD9E;

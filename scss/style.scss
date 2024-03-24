@@ -33,6 +33,10 @@ header {
     height: 30%;
 } 
 
+.navbar-nav .nav-link {
+  white-space: nowrap; // Evita que los elementos se dividan en múltiples líneas
+}
+
 // Estilos del carrusel
 
 .carousel-item {
