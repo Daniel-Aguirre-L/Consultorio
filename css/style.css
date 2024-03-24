@@ -16,8 +16,8 @@ header {
 }
 
 .logo {
-  width: 30%;
-  height: 30%;
+  width: 60%;
+  height: 60%;
 }
 
 .navbar-nav .nav-link {
@@ -140,4 +140,11 @@ h1 {
 }
 .comments .card .card-body {
   background-color: #DCA39B;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }/*# sourceMappingURL=style.css.map */
