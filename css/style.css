@@ -67,7 +67,7 @@ h1 {
 
 .first-card {
   background-image: url(/img/psicoterapia.avif);
-  background-size: contain;
+  background-size: cover;
 }
 .first-card li {
   margin-top: 25px;
@@ -86,7 +86,7 @@ h1 {
 
 .second-card {
   background-image: url(/img/neuropsicologia.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 .second-card li {
   margin-top: 25px;
@@ -105,7 +105,7 @@ h1 {
 
 .third-card {
   background-image: url(/img/grupos\ y\ empresas.png);
-  background-size: contain;
+  background-size: cover;
 }
 .third-card li {
   margin-top: 25px;
