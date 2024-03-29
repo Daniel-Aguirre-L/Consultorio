@@ -147,4 +147,11 @@ h1 {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+}
+
+footer {
+  background-color: #DCA39B;
+}
+footer .fab {
+  color: #E5EAED;
 }/*# sourceMappingURL=style.css.map */
