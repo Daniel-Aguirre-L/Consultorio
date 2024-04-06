@@ -194,4 +194,7 @@ footer .fab {
     height: auto;
     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
   }
+}
+.trusthero-copyright-icon {
+  visibility: hidden;
 }/*# sourceMappingURL=style.css.map */

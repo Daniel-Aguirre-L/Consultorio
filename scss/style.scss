@@ -34,7 +34,7 @@ header {
 }
 
 .navbar-nav .nav-link {
-  white-space: nowrap; // Evita que los elementos se dividan en múltiples líneas
+  white-space: nowrap;
 }
 
 .scrolled {
@@ -239,4 +239,8 @@ footer {
     height: auto;
     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
   }
+}
+
+.trusthero-copyright-icon{
+  visibility: hidden;
 }
