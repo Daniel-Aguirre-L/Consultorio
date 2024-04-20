@@ -22,11 +22,24 @@ body {
   font-family: 'Nexa', sans-serif;
 }
 
-// Estilos del header
+main {
 
-header {
-  background-color: $background;
 }
+
+h2 {
+  color: $secondary;
+}
+
+.btn-primary{
+border: none;
+background-color: $primary;
+border-radius: 50px;
+&:hover {
+  background-color: #3D7848;
+}
+}
+
+// Estilos del header
 
 .logo {
   width: 40%;
@@ -46,34 +59,38 @@ header {
 
 .scrolled+.content {
   margin-top: 56px;
-  /* Ajusta esto según la altura de tu navbar */
 }
 
-// Estilos del carrusel
+// Estilos del carrusel 
 
 .carousel-item {
   height: 400px;
-  background-color: $primary;
+  position: relative;
 }
 
-main {
-  background-color: $background;
+.carousel-item.active {
+  background-image: url('img/fondo-1.png');
+  background-size: cover; 
+  background-position: center ; 
 }
 
-h1 {
-  font-family: "Coolv";
+.carousel-inner > .carousel-item:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20%; /* Empezamos en la mitad del contenedor */
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Degradado de transparente a blanco */
 }
 
-.pic1 {
-  width: 50%;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+.logo {
+  size: 30%;
 }
 
 .pic2 {
   width: 50%;
 }
-
 // Estilos de las tarjetas
 
 .cards {
@@ -199,9 +216,23 @@ h1 {
 
 // Estilos de la lista personalizada
 
+.list {
+background-image: url(../img/PLANTILLAS\ PPT-1.png);
+background-size: cover;
+}
+
+.custom-list {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  li{
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+}
 .custom-list li::marker {
   content: "√";
-  color: green;
+  color: #3D7848;
 }
 
 // Estilos carrusel comentarios
@@ -225,10 +256,22 @@ h1 {
 }
 
 footer {
-  background-color: $secondaryb;
+  background-color: $primary;
 
   .fab {
     color: #E5EAED;
+  }
+}
+
+.last-footer{
+  background-color: black;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1dvh;
   }
 }
 

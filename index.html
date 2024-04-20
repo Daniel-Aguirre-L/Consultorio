@@ -24,36 +24,39 @@
 <body>
 
   <!-- Header de la pagina  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-end align-items-center">
-        <a class="navbar-brand me-auto" href="#">
-          <img src="img/LOGO-PSICORIENTE-HORIZONTAL.png" alt="logo" class="logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-end align-items-center">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="img/LOGO-PSICORIENTE-HORIZONTAL.png" alt="logo" class="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Artículos</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                <a class="dropdown-item" href="#">Servicio 1</a>
+                <a class="dropdown-item" href="#">Servicio 2</a>
+                <a class="dropdown-item" href="#">Servicio 3</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link active">Agendar Cita</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Artículos</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-              <a class="dropdown-item" href="#">Servicio 1</a>
-              <a class="dropdown-item" href="#">Servicio 2</a>
-              <a class="dropdown-item" href="#">Servicio 3</a>
-            </div>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link active">Agendar Cita</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
 
   <!-- Cuerpo de la pagina -->
@@ -62,7 +65,7 @@
     <!-- Primera seccion carrusel  -->
 
     <!-- Comportamiento del carrusel -->
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel carousel-dark slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -73,22 +76,17 @@
       <!-- Primera presentacion carrusel -->
 
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        <div class="carousel-item active" style="background-image: url('img/fondo-1.png');">
           <div class="container carousel-caption d-flex justify-content-between align-items-center">
             <div class="text-start">
-              <h1 class="display-1">Psicoriente</h1>
-              <p>
-                "Nuestro propósito es contribuir al bienestar y la salud
-                mental de la comunidad del Oriente Antioqueño."
+              <img src="img/LOGO-PSICORIENTE-BLACK.png" alt="logo" class="logo mb-4">
+              <p class="text-dark mb-4 fs-5">
+                "Nuestro propósito es contribuir al bienestar y la salud mental <br> de la comunidad del Oriente
+                Antioqueño."
               </p>
               <p>
                 <a class="btn btn-lg btn-primary" href="#">AGENDA TU CITA</a>
               </p>
-            </div>
-            <div class="align-self-center">
-              <img src="img/fondo-1.png" alt="" class="pic1 img-fluid" />
             </div>
           </div>
         </div>
@@ -188,7 +186,7 @@
             </div>
 
           </div>
-      </div>
+        </div>
 
         <!-- Tercera tarjeta -->
         <div class="col-md-4 mb-4">
@@ -220,7 +218,7 @@
     <section class="virtual-consultation container py-5">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-6">
-          <h2 class="text-center mb-4">Consulta Virtual</h2>
+          <h2 class="text-center mb-4 display-5">Consulta Virtual</h2>
           <p class="text-center">¿Prefieres una consulta desde la comodidad de tu hogar? ¡Te ofrecemos la opción de
             consultas virtuales!</p>
           <p class="text-center">Para comenzar tu consulta, puedes hacer clic en el botón a continuación:</p>
@@ -238,30 +236,29 @@
     </section>
 
     <!-- Tercera seccion listado -->
-    <div class="d-flex">
+
+    <div class="d-flex align-items-center list">
       <div class="col flex-grow-1">
-        <div class="text-center">
-          <p class="display-5">
-            ¿Por qué iniciar tu proceso con Psicoriente?
-          </p>
-        </div>
+          <div class="text-center">
+              <h2 class="display-5">
+                  ¿Por qué iniciar tu proceso con Psicoriente?
+              </h2>
+          </div>
       </div>
       <div class="col flex-grow-1">
-        <div>
-          <ul class="mx-auto custom-list" style="max-width: 400px">
-            <li style="margin-bottom: 30px">Mejora tu salud mental</li>
-            <li style="margin-bottom: 30px">
-              Mayor autoconocimiento y crecimiento personal
-            </li>
-            <li style="margin-bottom: 30px">
-              Mejora tus relaciones interpersonales
-            </li>
-            <li style="margin-bottom: 30px">
-              Desarrolla habilidades de afrontamiento
-            </li>
-          </ul>
-        </div>
+          <div>
+              <ul class="mx-auto custom-list">
+                  <li>Mejora tu salud mental</li>
+                  <li>Desarrolla habilidades de afrontamiento</li>
+                  <li>Descubre y supera patrones de pensamiento negativo</li>
+                  <li>Aprende a manejar el estrés de manera efectiva</li>
+                  <li>Encuentra apoyo emocional y herramientas para afrontar desafíos</li>
+                  <li>Desarrolla una mayor resiliencia ante las adversidades</li>
+                  <li>Trabaja en la construcción de una autoestima positiva</li>
+              </ul>
+          </div>
       </div>
+  </div>
 
     </div>
 
@@ -306,12 +303,15 @@
                   class="fab fa-instagram fa-3x"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-6 text-md-end">
-          <p>&copy; 2024 Psicoriente. Todos los derechos reservados.</p>
-        </div>
       </div>
     </div>
   </footer>
+
+  <div class="last-footer">
+    <a href="https://www.linkedin.com/in/daniel-aguirre-lopez/"> 
+      <span>© El nombre y logotipo de Psicoriente son marcas registradas. Derechos reservados. Desarrollado por Daniel Aguirre</span> 
+    </a>
+  </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/page.js"></script>
