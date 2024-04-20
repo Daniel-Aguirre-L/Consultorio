@@ -68,10 +68,10 @@ border-radius: 50px;
   position: relative;
 }
 
-.carousel-item.active {
-  background-image: url('img/fondo-1.png');
+.carousel-item.active:first-child {
   background-size: cover; 
   background-position: center ; 
+  background-image: url(../img/fondo-2.jpg);
 }
 
 .carousel-inner > .carousel-item:first-child::before {
@@ -283,6 +283,8 @@ footer {
     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
   }
 }
+
+
 
 .trusthero-copyright-icon{
   visibility: hidden;
