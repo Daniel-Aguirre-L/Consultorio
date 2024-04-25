@@ -17,11 +17,11 @@ h2 {
 
 .btn-primary {
   border: none;
-  background-color: #98ad9e;
+  background-color: #3d7848;
   border-radius: 50px;
 }
 .btn-primary:hover {
-  background-color: #3d7848;
+  background-color: #98ad9e;
 }
 
 .logo {
@@ -53,18 +53,16 @@ h2 {
   margin-top: 56px;
 }
 
-.carousel-item {
+#myCarousel .carousel-item {
   height: 400px;
   position: relative;
 }
-
-.carousel-item.active:first-child {
+#myCarousel .carousel-item.active:first-child {
   background-size: cover;
   background-position: center;
   background-image: url(../img/fondo-2.jpg);
 }
-
-.carousel-inner > .carousel-item:first-child::before {
+#myCarousel .carousel-inner > .carousel-item:first-child::before {
   content: "";
   position: absolute;
   top: 0;
@@ -73,28 +71,23 @@ h2 {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgb(255, 255, 255));
 }
-
-.carousel-item.active:nth-child(2) {
+#myCarousel .carousel-item.active:nth-child(2) {
   background-image: url(../img/PLANTILLAS\ PPT-2.png);
   background-size: cover;
 }
-
-.carousel-inner > .carousel-item:nth-child(2) .btn {
+#myCarousel .carousel-inner > .carousel-item:nth-child(2) .btn {
   font-size: 2rem;
 }
-
-.carousel-item.active:nth-child(3) {
+#myCarousel .carousel-item.active:nth-child(3) {
   background-image: url(../img/map.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.logo-carrusel {
+#myCarousel .logo-carrusel {
   width: 80%;
 }
-
-.pic2 {
+#myCarousel .pic2 {
   width: 50%;
 }
 
@@ -252,12 +245,33 @@ footer .fab {
   letter-spacing: 0.1dvh;
 }
 
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-link img {
+  width: 70px;
+  height: auto;
+}
+
+/* Estilos de la pagian de contacto */
+iframe {
+  filter: brightness(100%) contrast(100%) saturate(90%) blur(0px) hue-rotate(130deg);
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 60%;
     /* Ajusta el tamaño del logo para pantallas más pequeñas según sea necesario */
     height: auto;
     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  }
+  .whatsapp-link img {
+    width: 50px;
+    height: auto;
   }
 }
 .trusthero-copyright-icon {

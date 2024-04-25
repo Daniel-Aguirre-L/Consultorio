@@ -8,16 +8,6 @@
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/1e0e02a768.js" crossorigin="anonymous"></script>
-  <!-- Start of Async Callbell Code -->
-  <script>
-    window.callbellSettings = {
-      token: "J1zEioKTt7ZskCDuaVdEKCTP"
-    };
-  </script>
-  <script>
-    (function () { var w = window; var ic = w.callbell; if (typeof ic === "function") { ic('reattach_activator'); ic('update', callbellSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Callbell = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
-  </script>
-  <!-- End of Async Callbell Code -->
 
 </head>
 
@@ -39,9 +29,10 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Artículos</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Artículos</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
@@ -66,16 +57,8 @@
 
     <!-- Comportamiento del carrusel -->
     <div id="myCarousel" class="carousel carousel-dark slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <!-- Primera presentacion carrusel -->
-
-      <div class="carousel-inner">
+      <div class="carousel-inner index">
+        <!-- Primera presentacion carrusel-->
         <div class="carousel-item active">
           <div class="carousel-caption">
             <div class="text-start col-md-7">
@@ -91,28 +74,27 @@
         </div>
 
         <!-- Segunda presentacion carrusel-->
-
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
           <div class="container">
-              <div class="carousel-caption">
-                  <h1 class="display-5 mb-5 text-white">Ahora puedes cuidar de tu salud mental desde casa con el servicio de</h1>
-                  <a href="#" class="btn  btn-primary">Atención Virtual</a>
-              </div>
+            <div class="carousel-caption">
+              <h1 class="display-5 mb-5 text-white">Ahora puedes cuidar de tu salud mental desde casa con el servicio de
+              </h1>
+              <a href="#" class="btn  btn-primary">Atención Virtual</a>
+            </div>
           </div>
-      </div>
+        </div>
 
         <!-- Tercera presentacion carrusel  -->
-
         <div class="carousel-item">
           <div class="container">
-              <div class="carousel-caption"></div>
+            <div class="carousel-caption"></div>
           </div>
+        </div>
       </div>
 
       <!-- Comportamiento de los botones del carrusel  -->
-
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -121,6 +103,14 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+
+      <!-- Indicadores del carrusel -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
     </div>
 
     <!-- Seguna seccion tarjetas -->
@@ -227,64 +217,65 @@
 
     <div class="list container-fluid">
       <div class="row">
-          <div class="col-lg-6 d-flex align-items-center">
-              <div class="text-center">
-                  <h2 class="display-5">
-                      ¿Por qué iniciar tu proceso con Psicoriente?
-                  </h2>
-              </div>
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="text-center">
+            <h2 class="display-5">
+              ¿Por qué iniciar tu proceso con Psicoriente?
+            </h2>
           </div>
-          <div class="col-lg-6">
-              <ul class="custom-list">
-                  <li>Mejora tu salud mental</li>
-                  <li>Desarrolla habilidades de afrontamiento</li>
-                  <li>Descubre y supera patrones de pensamiento negativo</li>
-                  <li>Aprende a manejar el estrés de manera efectiva</li>
-                  <li>Encuentra apoyo emocional y herramientas para afrontar desafíos</li>
-                  <li>Desarrolla una mayor resiliencia ante las adversidades</li>
-                  <li>Trabaja en la construcción de una autoestima positiva</li>
-              </ul>
-          </div>
+        </div>
+        <div class="col-lg-6">
+          <ul class="custom-list">
+            <li>Mejora tu salud mental</li>
+            <li>Desarrolla habilidades de afrontamiento</li>
+            <li>Descubre y supera patrones de pensamiento negativo</li>
+            <li>Aprende a manejar el estrés de manera efectiva</li>
+            <li>Encuentra apoyo emocional y herramientas para afrontar desafíos</li>
+            <li>Desarrolla una mayor resiliencia ante las adversidades</li>
+            <li>Trabaja en la construcción de una autoestima positiva</li>
+          </ul>
+        </div>
       </div>
-  </div>
+    </div>
 
     <!-- Cuarta seccion de comentarios -->
 
     <div id="trusthero" style="width: 100%; height: 100%;" data-trusthero-widget-id="EhPxTsTpg5RBRNs8IxJ3"></div>
 
-    <!-- Datos de contacto y ubicacion -->
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.4151554068728!2d-75.37441643935621!3d6.153475796696391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469fcb521f2c53%3A0xf8ac8b47e1f2fa18!2sPsicoriente!5e0!3m2!1ses-419!2sco!4v1711290926877!5m2!1ses-419!2sco"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="col-md-6">
-          <div class="contact-info">
-            <h2>Contacto</h2>
-            <p><strong>Teléfono:</strong> +57 301 2745303</p>
-            <p><strong>Dirección:</strong> Cra. 48 #49-05, Rionegro, Antioquia Oficina 406 y 407</p>
-            <p><strong>Correo electrónico:</strong> contacto@psicoriente.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </main>
 
-  <!-- Footer -->
   <footer class="text-white py-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Artículos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFooter" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownFooter">
+                <a class="dropdown-item" href="#">Servicio 1</a>
+                <a class="dropdown-item" href="#">Servicio 2</a>
+                <a class="dropdown-item" href="#">Servicio 3</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Agendar Cita</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-end">
           <p>Síguenos en nuestras redes sociales:</p>
           <ul class="list-inline">
             <li class="list-inline-item"><a href="https://www.facebook.com/psicoriente.sas?locale=es_LA"><i
                   class="fab fa-facebook-f fa-3x"></i></a></li>
             <li class="list-inline-item"><a href="https://twitter.com/psicoriente"><i
-                  class="fab fa-x-twitter fa-3x"></i></a></li>
+                  class="fab fa-twitter fa-3x"></i></a></li>
             <li class="list-inline-item"><a href="https://www.instagram.com/psicorientee/"><i
                   class="fab fa-instagram fa-3x"></i></a></li>
           </ul>
@@ -300,10 +291,13 @@
     </a>
   </div>
 
+  <a href="https://wa.link/m32yx8" class="whatsapp-link">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/page.js"></script>
   <script src="https://trusthero.sfo3.cdn.digitaloceanspaces.com/scripts/trusthero.min.js" defer></script>
-
 
 </body>
 
