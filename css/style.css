@@ -12,16 +12,16 @@ body {
 }
 
 h2 {
-  color: #B57575;
+  color: #b57575;
 }
 
 .btn-primary {
   border: none;
-  background-color: #98AD9E;
+  background-color: #98ad9e;
   border-radius: 50px;
 }
 .btn-primary:hover {
-  background-color: #3D7848;
+  background-color: #3d7848;
 }
 
 .logo {
@@ -31,6 +31,15 @@ h2 {
 
 .navbar-nav .nav-link {
   white-space: nowrap;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #dca39b;
+  border-radius: 50px;
+}
+
+.navbar-nav .nav-link.active:hover {
+  background-color: #b57575;
 }
 
 .scrolled {
@@ -59,14 +68,30 @@ h2 {
   content: "";
   position: absolute;
   top: 0;
-  right: 20%; /* Empezamos en la mitad del contenedor */
+  right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255)); /* Degradado de transparente a blanco */
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgb(255, 255, 255));
 }
 
-.logo {
-  size: 30%;
+.carousel-item.active:nth-child(2) {
+  background-image: url(../img/PLANTILLAS\ PPT-2.png);
+  background-size: cover;
+}
+
+.carousel-inner > .carousel-item:nth-child(2) .btn {
+  font-size: 2rem;
+}
+
+.carousel-item.active:nth-child(3) {
+  background-image: url(../img/map.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-carrusel {
+  width: 80%;
 }
 
 .pic2 {
@@ -188,18 +213,18 @@ h2 {
 
 .custom-list li::marker {
   content: "√";
-  color: #3D7848;
+  color: #3d7848;
 }
 
 .card-body {
-  background-color: #E5EAED;
+  background-color: #e5eaed;
 }
 
 .comments .card {
   background-color: black;
 }
 .comments .card .card-body {
-  background-color: #DCA39B;
+  background-color: #dca39b;
 }
 
 .whatsapp-btn {
@@ -210,10 +235,10 @@ h2 {
 }
 
 footer {
-  background-color: #98AD9E;
+  background-color: #98ad9e;
 }
 footer .fab {
-  color: #E5EAED;
+  color: #e5eaed;
 }
 
 .last-footer {
