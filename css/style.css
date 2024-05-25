@@ -15,6 +15,14 @@ h2 {
   color: #b57575;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .btn-primary {
   border: none;
   background-color: #3d7848;
@@ -258,8 +266,19 @@ footer .fab {
 }
 
 /* Estilos de la pagina de contacto */
+.rounded-background {
+  border-radius: 10px;
+  background-color: #c9ded0;
+  padding: 5px 10px;
+}
+
 iframe {
   filter: brightness(100%) contrast(100%) saturate(90%) blur(0px) hue-rotate(130deg);
+}
+
+/* Estilos de la pagina de servicios */
+.service {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {

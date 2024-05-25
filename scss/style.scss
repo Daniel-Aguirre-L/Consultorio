@@ -22,9 +22,16 @@ body {
   font-family: "Nexa", sans-serif;
 }
 
-
 h2 {
   color: $secondary;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .btn-primary {
@@ -318,10 +325,21 @@ footer {
 
 /* Estilos de la pagina de contacto */
 
+.rounded-background {
+  border-radius: 10px; 
+  background-color: $primaryb;
+  padding: 5px 10px;
+}
+
 iframe {
   filter: brightness(100%) contrast(100%) saturate(90%) blur(0px) hue-rotate(130deg);
 }
 
+/* Estilos de la pagina de servicios */
+
+.service {
+  margin-bottom: 30px ;
+}
 
 @media (max-width: 768px) {
   .logo {
