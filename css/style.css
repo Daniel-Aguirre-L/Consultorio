@@ -17,14 +17,18 @@ h2 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 .btn-primary {
   border: none;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #3d7848;
   border-radius: 50px;
 }
@@ -44,6 +48,8 @@ a:visited {
 .navbar-nav .nav-link.active {
   background-color: #dca39b;
   border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-nav .nav-link.active:hover {
@@ -277,8 +283,8 @@ iframe {
 }
 
 /* Estilos de la pagina de servicios */
-.service {
-  margin-bottom: 30px;
+main.servicios div.card-body {
+  background-color: #98ad9e;
 }
 
 @media (max-width: 768px) {
