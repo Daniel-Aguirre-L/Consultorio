@@ -344,11 +344,39 @@ iframe {
 
 /* Estilos de la pagina de servicios */
 
-main.servicios {
-  div.card-body {
-    background-color: #98ad9e;
+.servicios{ 
+  .card {
+    border-color: white;
   }
+  .card-body {
+    background-color: $background;
+    border-radius: 15px;
+    }
+    .img-fluid {
+      width: 20%;
+      margin-top: 10px;
+
+    }
+
+    h3{
+      border-radius: 20px;
+      margin:10px;
+      background-color: $primary;
+    }
+    p{
+      margin: 20px;
+      text-align: center;
+    }
+    h2{
+      border-color: $primary;
+      border-style: dashed;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
 }
+
+
 
 @media (max-width: 768px) {
   .logo {

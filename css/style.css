@@ -21,7 +21,6 @@ a {
 }
 
 a:visited {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -283,8 +282,31 @@ iframe {
 }
 
 /* Estilos de la pagina de servicios */
-main.servicios div.card-body {
+.servicios .card {
+  border-color: white;
+}
+.servicios .card-body {
+  background-color: #e5eaed;
+  border-radius: 15px;
+}
+.servicios .img-fluid {
+  width: 20%;
+  margin-top: 10px;
+}
+.servicios h3 {
+  border-radius: 20px;
+  margin: 10px;
   background-color: #98ad9e;
+}
+.servicios p {
+  margin: 20px;
+  text-align: center;
+}
+.servicios h2 {
+  border-color: #98ad9e;
+  border-style: dashed;
+  border-radius: 15px;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
