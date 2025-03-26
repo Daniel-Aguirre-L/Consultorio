@@ -7,6 +7,7 @@
   <title>Consultorio</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script defer src="/js/main.js"></script>
   <script src="https://kit.fontawesome.com/1e0e02a768.js" crossorigin="anonymous"></script>
 
 </head>
@@ -14,41 +15,8 @@
 <body>
 
   <!-- Header de la pagina  -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-end align-items-center">
-          <a class="navbar-brand me-auto" href="#">
-            <img src="img/LOGO-PSICORIENTE-HORIZONTAL.png" alt="logo" class="logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Artículos</a></li>
-            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-                <a class="dropdown-item" href="servicios.html#atencion/psicologica">Psicologia</a>
-                <a class="dropdown-item" href="servicios.html">Neuropsicologia</a>
-                <a class="dropdown-item" href="servicios.html">Grupos y Empresas</a>
-              </div>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link active">Agendar Cita</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+  
+  <div id="header"></div>
 
   <!-- Cuerpo de la pagina -->
 
@@ -191,51 +159,47 @@
       </div>
     </div>
 
-    <!-- Sección de consulta virtual y video -->
-    <section class="virtual-consultation container py-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
-          <h2 class="text-center mb-4 display-5">Consulta Virtual</h2>
-          <p class="text-center">¿Prefieres una consulta desde la comodidad de tu hogar? ¡Te ofrecemos la opción de
-            consultas virtuales!</p>
-          <p class="text-center">Para comenzar tu consulta, puedes hacer clic en el botón a continuación:</p>
-          <div class="text-center">
-            <a href="#" class="btn btn-primary btn-lg">Iniciar Consulta Virtual</a>
+    <section class="shared-background py-5">
+      <!-- Sección de consulta virtual -->
+      <div class="virtual-consultation container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <h2 class="text-center mb-4 display-5">Consulta Virtual</h2>
+            <p class="text-center">¿Prefieres una consulta desde la comodidad de tu hogar? ¡Te ofrecemos la opción de consultas virtuales!</p>
+            <p class="text-center">Para comenzar tu consulta, puedes hacer clic en el botón a continuación:</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary btn-lg">Iniciar Consulta Virtual</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Contenedor para la imagen/video -->
+            <div class="video-container text-center">
+              <img src="img/consultavirtual.jpg" alt="imagen de atención virtual" class="img-fluid rounded w-75">
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <!-- Espacio para el video -->
-          <div class="embed-responsive embed-responsive-16by9">
-            <img src="img/consultavirtual.PNG" alt="imagen de atencion vitual" class="img-fluid">
+      </div>
+    
+      <!-- Sección del listado -->
+      <div class="list container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="display-5 mb-4">¿Por qué iniciar tu proceso con Psicoriente?</h2>
+          </div>
+          <div class="col-lg-6">
+            <ul class="custom-list ps-3">
+              <li>Mejora tu salud mental</li>
+              <li>Desarrolla habilidades de afrontamiento</li>
+              <li>Descubre y supera patrones de pensamiento negativo</li>
+              <li>Aprende a manejar el estrés de manera efectiva</li>
+              <li>Encuentra apoyo emocional y herramientas para afrontar desafíos</li>
+              <li>Desarrolla una mayor resiliencia ante las adversidades</li>
+              <li>Trabaja en la construcción de una autoestima positiva</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Tercera seccion listado -->
-
-    <div class="list container-fluid">
-      <div class="row">
-        <div class="col-lg-6 d-flex align-items-center">
-          <div class="text-center">
-            <h2 class="display-5">
-              ¿Por qué iniciar tu proceso con Psicoriente?
-            </h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <ul class="custom-list">
-            <li>Mejora tu salud mental</li>
-            <li>Desarrolla habilidades de afrontamiento</li>
-            <li>Descubre y supera patrones de pensamiento negativo</li>
-            <li>Aprende a manejar el estrés de manera efectiva</li>
-            <li>Encuentra apoyo emocional y herramientas para afrontar desafíos</li>
-            <li>Desarrolla una mayor resiliencia ante las adversidades</li>
-            <li>Trabaja en la construcción de una autoestima positiva</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
     <!-- Cuarta seccion de comentarios -->
 
@@ -289,45 +253,7 @@
     </div>
   </main>
 
-  <footer class="text-white py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Artículos</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFooter" role="button"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownFooter">
-                <a class="dropdown-item" href="#">Psicologia</a>
-                <a class="dropdown-item" href="#">Neuropsicologia</a>
-                <a class="dropdown-item" href="#">Grupos y Empresas</a>
-              </div>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Agendar Cita</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-end">
-          <p>Síguenos en nuestras redes sociales:</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.facebook.com/psicoriente.sas?locale=es_LA"><i
-                  class="fab fa-facebook-f fa-3x"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/psicoriente"><i
-                  class="fab fa-twitter fa-3x"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/psicorientee/"><i
-                  class="fab fa-instagram fa-3x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
 
   <div class="last-footer">
     <a href="https://www.linkedin.com/in/daniel-aguirre-lopez/">
