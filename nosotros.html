@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +8,7 @@
   <!-- Enlaces a archivos CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
+  
   <script defer src="js/main.js"></script>
   <!-- Enlace al kit de iconos Font Awesome -->
   <script src="https://kit.fontawesome.com/1e0e02a768.js" crossorigin="anonymous"></script>
@@ -15,68 +16,82 @@
 
 <body>
   <!-- Encabezado de la página -->
-
   <div id="header"></div>
 
   <main>
-    <div class="container mt-5">
+    <!-- Sección Hero -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
+        <p class="lead">Psicoriente S.A.S. es una empresa de servicios psicológicos conformada por un grupo de profesionales formados en Psicología, que brindan servicios psicológicos en el Oriente antioqueño. Nos enfocamos en la intervención de problemáticas en el ámbito de salud mental a nivel individual, de pareja, familiar, grupal y comunitario.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Sección de Misión y Visión -->
+      <div class="mission-vision">
         <div class="row">
-            <div class="col-md-12 mb-4">
-                <h2 class="text-center">Sobre Nosotros</h2>
-                <p class="text-center">Psicoriente S.A.S. es una empresa de servicios psicológicos conformada por un grupo de profesionales formados en Psicología, que brindan servicios psicológicos en el Oriente antioqueño. Nos enfocamos en la intervención de problemáticas en el ámbito de salud mental a nivel individual, de pareja, familiar, grupal y comunitario.</p>
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="h-100 p-4 bg-white rounded-3">
+              <h3 class="text-center"><i class="fas fa-bullseye me-2 text-primary"></i>Misión</h3>
+              <p class="text-center mt-3">Psicoriente S.A.S busca favorecer la Salud mental y el bienestar de la comunidad a través de terapia psicológica basada en la evidencia.</p>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-4 bg-white rounded-3">
+              <h3 class="text-center"><i class="fas fa-eye me-2 text-primary"></i>Visión</h3>
+              <p class="text-center mt-3">Para el año 2025, Psicoriente será un referente de salud mental en la región, gracias al compromiso, profesionalismo y sentido humano de sus colaboradores.</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Sección de Misión y Visión -->
-        <div class="row mt-5 mb-4">
-            <div class="col-md-6 d-flex flex-column">
-                <h3>Misión</h3>
-                <p>Psicoriente S.A.S busca favorecer la Salud mental y el bienestar de la comunidad a través de terapia psicológica basada en la evidencia.</p>
-            </div>
-            <div class="col-md-6 d-flex flex-column">
-                <h3>Visión</h3>
-                <p>Para el año 2025, Psicoriente será un referente de salud mental en la región, gracias al compromiso, profesionalismo y sentido humano de sus colaboradores.</p>
-            </div>
-        </div>
+      <!-- Sección de Equipo -->
+      <h2 class="section-title text-center">Nuestro Equipo</h2>
 
-        <!-- Sección de Profesional: Andrea -->
-        <div class="row mt-5 mb-4">
-            <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                    <div>
-                        <img src="img/andrea.jpeg" alt="Andrea" class="img-fluid rounded-circle" style="width: 550px;">
-                    </div>
-                    <div class="ms-3">
-                        <h3>Johana Andrea Zuluaga Giraldo</h3>
-                        <p>Psicóloga con Magister en Neuropsicología Clínica. Cofundadora de Psicoriente SAS, brinda atención psicológica desde un enfoque cognitivo conductual y es especialista en valoración neuropsicológica.</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Profesional: Andrea -->
+      <div class="row team-member align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/andrea.jpeg" alt="Andrea" class="img-fluid rounded-circle team-member-img d-block mx-auto">
         </div>
+        <div class="col-lg-6">
+          <div class="team-member-info">
+            <h3>Johana Andrea Zuluaga Giraldo</h3>
+            <p class="text-muted">Psicóloga con Magister en Neuropsicología Clínica. Cofundadora de Psicoriente SAS, brinda atención psicológica desde un enfoque cognitivo conductual y es especialista en valoración neuropsicológica.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-primary me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#" class="text-primary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-primary"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Sección de Profesional: Jackeline -->
-        <div class="row mt-5 mb-4">
-            <div class="col-md-6 offset-md-6">
-                <div class="d-flex align-items-center justify-content-end">
-                    <div class="me-3 text-end">
-                        <h3>Jackeline Sánchez Franco</h3>
-                        <p>Psicóloga cofundadora de Psicoriente SAS. Especializada en atención psicológica individual a adolescentes, adultos y parejas, promoviendo el bienestar mental y emocional desde un enfoque cognitivo conductual.</p>
-                    </div>
-                    <div>
-                        <img src="img/jacke.jpeg" alt="Jackeline" class="img-fluid rounded-circle" style="width: 550px;">
-                    </div>
-                </div>
-            </div>
+      <!-- Profesional: Jackeline -->
+      <div class="row team-member align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/jacke.jpeg" alt="Jackeline" class="img-fluid rounded-circle team-member-img d-block mx-auto">
         </div>
+        <div class="col-lg-6">
+          <div class="team-member-info">
+            <h3>Jackeline Sánchez Franco</h3>
+            <p class="text-muted">Psicóloga cofundadora de Psicoriente SAS. Especializada en atención psicológica individual a adolescentes, adultos y parejas, promoviendo el bienestar mental y emocional desde un enfoque cognitivo conductual.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-primary me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#" class="text-primary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-primary"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</main>
+  </main>
 
-<div id="footer"></div>
+  <div id="footer"></div>
 
   <div class="last-footer">
     <a href="https://www.linkedin.com/in/daniel-aguirre-lopez/">
-      <span>© Derechos reservados. Desarrollada por Daniel
-        Aguirre</span>
+      <span>© Derechos reservados. Desarrollada por Daniel Aguirre</span>
     </a>
   </div>
 
@@ -87,3 +102,5 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/page.js"></script>
   <script src="https://trusthero.sfo3.cdn.digitaloceanspaces.com/scripts/trusthero.min.js" defer></script>
+</body>
+</html>

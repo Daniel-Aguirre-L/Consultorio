@@ -29,11 +29,11 @@ a:visited {
   border: none;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #3d7848;
+  background-color: #5b99a1;
   border-radius: 50px;
 }
 .btn-primary:hover {
-  background-color: #98ad9e;
+  background-color: #3a6a8c;
 }
 
 .logo {
@@ -46,14 +46,15 @@ a:visited {
 }
 
 .navbar-nav .nav-link.active {
-  background-color: #dca39b;
+  background-color: #5b99a1;
   border-radius: 50px;
   padding-left: 15px;
   padding-right: 15px;
+  color: white;
 }
 
 .navbar-nav .nav-link.active:hover {
-  background-color: #b57575;
+  background-color: #3a6a8c;
 }
 
 .scrolled {
@@ -73,8 +74,8 @@ a:visited {
 }
 #myCarousel .carousel-item.active:first-child {
   background-size: cover;
-  background-position: center;
-  background-image: url(../img/fondo-2.jpg);
+  background-position: top;
+  background-image: url(../img/prueba3.jpeg);
 }
 #myCarousel .carousel-inner > .carousel-item:first-child::before {
   content: "";
@@ -110,6 +111,7 @@ a:visited {
   justify-content: center;
   position: relative;
   border-width: 0px;
+  border-radius: 20px;
 }
 .cards .card h3 {
   margin: 0;
@@ -135,6 +137,13 @@ a:visited {
 .cards .card .back {
   transform: perspective(500px) rotateY(180deg);
   position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra todo verticalmente */
+  align-items: center;
+  padding: 20px;
 }
 .cards .card:hover .front {
   transform: perspective(500px) rotateY(180deg);
@@ -159,7 +168,7 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.375rem;
+  border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .cards .second-card {
@@ -179,7 +188,7 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.375rem;
+  border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .cards .third-card {
@@ -190,7 +199,7 @@ a:visited {
   width: 100px;
 }
 .cards .third-card li {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .cards .third-card::before {
   content: "";
@@ -199,7 +208,7 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.375rem;
+  border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -271,6 +280,66 @@ footer .fab {
   height: auto;
 }
 
+/* Estilos adicionales para la página Sobre Nosotros */
+.hero-section {
+  background: #98ad9e;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.mission-vision {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 50px;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0d6efd;
+}
+
 /* Estilos de la pagina de contacto */
 .rounded-background {
   border-radius: 10px;
@@ -283,33 +352,311 @@ iframe {
 }
 
 /* Estilos de la pagina de servicios */
-.servicios .card {
-  border-color: white;
-}
-.servicios .card-body {
-  background-color: #e5eaed;
-  border-radius: 15px;
-}
-.servicios .img-fluid {
-  width: 20%;
-  margin-top: 10px;
-}
-.servicios h3 {
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #98ad9e;
-}
-.servicios p {
-  margin: 20px;
-  text-align: center;
-}
-.servicios h2 {
-  border-color: #98ad9e;
-  border-style: dashed;
-  border-radius: 15px;
-  margin-top: 30px;
+.tooltip-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 480px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  z-index: 10;
+  border: 1px solid #ccc;
 }
 
+.list-group-item {
+  position: relative;
+}
+
+.list-group-item:hover .tooltip-box {
+  display: block;
+  top: 100%;
+  right: 30%;
+  transform: translateX(-50%);
+}
+
+.detalle-servicio {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.detalle-servicio .container {
+  max-width: 800px;
+}
+
+.servicios .card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.servicios .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.servicios .card .card-body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.servicios .card .card-body p {
+  flex-grow: 1;
+}
+.servicios .card i {
+  color: white;
+  background: #82a28a;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+.servicios .card:hover i {
+  background: #98ad9e;
+  color: white;
+  transform: scale(1.1);
+}
+.servicios .card h3 {
+  color: #3a6a8c;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+.servicios .card h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #5b99a1;
+}
+.servicios .card .btn-primary {
+  background-color: #3a6a8c;
+  border-color: #3a6a8c;
+  border-radius: 50px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.servicios .card .btn-primary:hover {
+  background-color: #5b99a1;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(58, 106, 140, 0.4);
+}
+.servicios .list-group-item {
+  border: none;
+  background: transparent;
+  padding: 12px 0;
+  position: relative;
+}
+.servicios .list-group-item a {
+  color: #3a6a8c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.servicios .list-group-item a:hover {
+  color: #5b99a1;
+  padding-left: 10px;
+}
+.servicios .list-group-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background: rgba(45, 64, 89, 0.1);
+}
+.servicios h2 {
+  color: #3a6a8c;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.servicios h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #5b99a1, #a5dff9);
+  border-radius: 2px;
+}
+
+.detalle-servicio {
+  padding: 80px 0;
+  position: relative;
+}
+.detalle-servicio:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+.detalle-servicio:nth-child(even) {
+  background-color: white;
+}
+.detalle-servicio .container {
+  position: relative;
+  z-index: 2;
+}
+.detalle-servicio h2 {
+  color: #3a6a8c;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+.detalle-servicio h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #5b99a1, #a5dff9);
+  border-radius: 2px;
+}
+.detalle-servicio .lead {
+  color: #555;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+.detalle-servicio img {
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+.detalle-servicio img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.detalle-servicio h4 {
+  color: #5b99a1;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.detalle-servicio ul {
+  padding-left: 20px;
+  list-style: none;
+}
+.detalle-servicio ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+.detalle-servicio ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #5b99a1;
+  font-weight: bold;
+}
+
+/* Iconos y características */
+.icon-wrapper {
+  margin-bottom: 25px;
+}
+
+.service-description {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.service-features {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  position: relative;
+  padding: 10px 0 10px 35px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.feature-item:hover {
+  transform: translateX(5px);
+}
+.feature-item:hover .feature-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.feature-icon {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #5b99a1;
+  font-size: 1.2rem;
+}
+
+.feature-tooltip {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s;
+  z-index: 10;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-cta {
+  position: relative;
+  overflow: hidden;
+}
+.btn-cta:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+.btn-cta:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
 @media (max-width: 768px) {
   .logo {
     width: 60%;
