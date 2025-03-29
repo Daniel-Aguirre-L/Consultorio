@@ -657,12 +657,45 @@ iframe {
     opacity: 0;
   }
 }
+@media (max-width: 992px) {
+  .detalle-servicio .col-lg-5 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+  }
+  .detalle-servicio .row {
+    flex-direction: column-reverse !important;
+  }
+  .detalle-servicio .flex-row-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .detalle-servicio img {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 768px) {
   .logo {
     width: 60%;
     /* Ajusta el tamaño del logo para pantallas más pequeñas según sea necesario */
     height: auto;
     /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  }
+  .carousel-item.active:first-child {
+    background-position: 80% center !important;
+  }
+  #myCarousel .carousel-inner > .carousel-item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .virtual-consultation .btn-lg {
+    margin-bottom: 20px;
   }
   .whatsapp-link img {
     width: 50px;
