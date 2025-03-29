@@ -697,6 +697,26 @@ iframe {
   .virtual-consultation .btn-lg {
     margin-bottom: 20px;
   }
+  .tooltip-box {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    max-width: 300px !important;
+    z-index: 9999 !important;
+    background: white !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  }
+  .tooltip-box:before {
+    display: none !important;
+  }
+  .tooltip-box a {
+    margin-top: 15px !important;
+    display: inline-block !important;
+  }
   .whatsapp-link img {
     width: 50px;
     height: auto;
